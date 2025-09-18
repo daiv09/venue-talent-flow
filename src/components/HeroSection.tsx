@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
               Streamline Your
-              <span className="block text-accent-foreground/90">
+              <span className="block text-primary-foreground">
                 Hospitality Hiring
               </span>
             </h1>
