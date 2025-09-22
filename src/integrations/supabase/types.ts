@@ -14,7 +14,40 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: { id: string; full_name: string | null; role: "vendor" | "company" | "organiser" | null; created_at: string | null };
+        Insert: { id: string; full_name?: string | null; role?: "vendor" | "company" | "organiser" | null; created_at?: string | null };
+        Update: { id?: string; full_name?: string | null; role?: "vendor" | "company" | "organiser" | null; created_at?: string | null };
+        Relationships: [];
+      };
+      events: {
+        Row: { id: string; organiser_id: string | null; name: string; event_date: string; location: string; notes: string | null; created_at: string | null };
+        Insert: { id?: string; organiser_id?: string | null; name: string; event_date: string; location: string; notes?: string | null; created_at?: string | null };
+        Update: { id?: string; organiser_id?: string | null; name?: string; event_date?: string; location?: string; notes?: string | null; created_at?: string | null };
+        Relationships: [
+          {
+            foreignKeyName: "event_positions_event_id_fkey";
+            columns: ["id"];
+            isOneToOne: false;
+            referencedRelation: "event_positions";
+            referencedColumns: ["event_id"];
+          }
+        ];
+      };
+      event_positions: {
+        Row: { id: string; event_id: string; title: string; quantity: number; created_at: string | null };
+        Insert: { id?: string; event_id: string; title: string; quantity?: number; created_at?: string | null };
+        Update: { id?: string; event_id?: string; title?: string; quantity?: number; created_at?: string | null };
+        Relationships: [
+          {
+            foreignKeyName: "event_positions_event_id_fkey";
+            columns: ["event_id"];
+            isOneToOne: false;
+            referencedRelation: "events";
+            referencedColumns: ["id"];
+          }
+        ];
+      };
     }
     Views: {
       [_ in never]: never

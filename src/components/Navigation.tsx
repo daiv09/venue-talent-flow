@@ -31,12 +31,8 @@ const Navigation = () => {
               About
             </a>
             <div className="flex items-center gap-3 ml-6">
-              <Button variant="outline" size="sm">
-                Sign In
-              </Button>
-              <Button variant="hero" size="sm">
-                Get Started
-              </Button>
+              <Button variant="outline" size="sm" onClick={() => (window.location.href = "/login")}>Sign In</Button>
+              <Button variant="hero" size="sm" onClick={() => (window.location.href = "/signup")}>Get Started</Button>
             </div>
           </div>
 
@@ -66,12 +62,8 @@ const Navigation = () => {
                 About
               </a>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="outline" size="sm">
-                  Sign In
-                </Button>
-                <Button variant="hero" size="sm">
-                  Get Started
-                </Button>
+                <Button variant="outline" size="sm" onClick={() => (window.location.href = "/login")}>Sign In</Button>
+                <Button variant="hero" size="sm" onClick={() => (window.location.href = "/signup")}>Get Started</Button>
               </div>
             </div>
           </div>
