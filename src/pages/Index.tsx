@@ -26,7 +26,7 @@ const Index = () => {
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
-            © 2024 HotelHirePro. All rights reserved.
+            © 2025 HotelHirePro. All rights reserved.
           </div>
         </div>
       </footer>
