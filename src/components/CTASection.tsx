@@ -22,7 +22,7 @@ const CTASection = () => {
           </h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
             Join thousands of companies and professionals already using
-            HotelHirePro to streamline their hospitality recruitment process.
+            Hire to streamline their hospitality recruitment process.
           </p>
         </div>
 

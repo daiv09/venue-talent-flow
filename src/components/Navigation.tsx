@@ -14,7 +14,7 @@ const Navigation = () => {
             <div className="flex items-center gap-2">
               <Building2 className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                HotelHirePro
+                Hire
               </span>
             </div>
           </div>

@@ -19,14 +19,14 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <h3 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-2">
-              HotelHirePro
+              Hire
             </h3>
             <p className="text-muted-foreground">
               Streamlining hospitality hiring for a better industry
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
-            © 2025 HotelHirePro. All rights reserved.
+            © 2025 Hire. All rights reserved.
           </div>
         </div>
       </footer>

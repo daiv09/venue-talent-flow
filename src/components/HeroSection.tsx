@@ -21,7 +21,7 @@ const HeroSection = () => {
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl">
               Connect top talent with leading hospitality companies. Whether
-              you're hiring for events, hotels, or restaurants, HotelHirePro
+              you're hiring for events, hotels, or restaurants, Hire
               makes bulk recruitment simple and efficient.
             </p>
 
